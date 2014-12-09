@@ -1,0 +1,16 @@
+{
+    "name": "mobify-tech-prtnr-na03-dw",
+    "siteUrl": "http://mobify-tech-prtnr-na03-dw.demandware.net/on/demandware.store/Sites-SiteGenesis-Site",
+    "version": "0.0.1",
+    "dependencies": {
+        "adaptivejs": "1.1.4",
+        "connect": "2.3.4",
+        "grunt": "0.4.2",
+        "grunt-concurrent": "0.4.3",
+        "mocha": "1.14.0",
+        "chai": "1.9.0",
+        "lodash": "~2.4.1",
+        "grunt-contrib-sass": "0.8.1",
+        "grunt-autoprefixer": "2.0.0"
+}
+}

@@ -1,0 +1,11 @@
+node_modules
+bower_components
+localSettings.json
+/build
+.sass-cache/
+tmp/
+.idea/
+.DS_Store
+reports
+build.tar
+.bundle
