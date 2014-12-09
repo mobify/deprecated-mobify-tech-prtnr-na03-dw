@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "dependencies": {
         "imageresize": "git://github.com/mobify/imageresize-client.git#1.0.2",
+        "pikabu": "git://github.com/mobify/pikabu.git#0.2.2",
         "fastclick": "~1.0.3",
         "deckard": "~1.0.0",
         "dustjs-linkedin": "2.3.3",
