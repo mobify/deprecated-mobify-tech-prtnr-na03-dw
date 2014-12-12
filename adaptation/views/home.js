@@ -9,8 +9,8 @@ function($, BaseView, template) {
         extend: BaseView,
         context: {
             templateName: 'home',
-            firstp: function() {
-                return $('p').first().text() || 'Could not find the first paragraph text in your page';
+            carousel: function() {
+                return $('#homepage-slides img');
             }
         }
 

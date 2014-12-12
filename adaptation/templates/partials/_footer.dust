@@ -1,4 +1,5 @@
 {#footer}
     <footer class="t-footer">
+        {links}
     </footer>
 {/footer}

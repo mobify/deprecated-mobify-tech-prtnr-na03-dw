@@ -2,9 +2,10 @@ define([
     '$',
     'fastclick',
     'pikabu',
+    'scooch',
     'deckard'
 ],
-function($, fastclick, Ppikabu) {
+function($, fastclick, Ppikabu, Scooch) {
 
     var globalUI = function() {
         fastclick.attach(document.body);
@@ -19,6 +20,8 @@ function($, fastclick, Ppikabu) {
                 right: '80%'
             }
         });
+
+        $('.m-scooch').scooch();
     };
 
     return globalUI;

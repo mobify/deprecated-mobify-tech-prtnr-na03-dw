@@ -7,6 +7,8 @@
         {+style}
             <link rel="stylesheet" type="text/css" href="{@getUrl path="css/stylesheet.css" /}" />
         {/style}
+        <link rel="stylesheet" href="{@getUrl path="bower_components/scooch/build/scooch.min.css" /}">
+        <link rel="stylesheet" href="{@getUrl path="bower_components/scooch/build/scooch-style.min.css" /}">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 

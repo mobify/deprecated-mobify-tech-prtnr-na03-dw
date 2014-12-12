@@ -1,7 +1,18 @@
 {>"templates/base"/}
 
 {<contentBlock}
-
+    <!-- the viewport -->
+    <div class="m-scooch m-fluid m-scooch-photos">
+      <!-- the slider -->
+      <div class="m-scooch-inner">
+        <!-- the items -->
+        {#carousel}
+        <div class="m-item">
+          {.}
+        </div>
+        {/carousel}
+      </div>
+    </div>
 {/contentBlock}
 
 {<uiScripts}
@@ -15,4 +26,3 @@
     })(Adaptive.AMD.require);
     </script>
 {/uiScripts}
-
