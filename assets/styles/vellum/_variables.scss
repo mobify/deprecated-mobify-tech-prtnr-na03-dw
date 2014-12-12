@@ -1,23 +1,18 @@
-// Variables
-// ===
+// VARIABLES
+// =========
 //
 // Variables are formatted using the following rules:
 //
-// * Names must be lowercase and dash-separated (kebab-case).
-//
-// * Names should represent properties or applications as closely as possible
-//
-// * Modifiers, qualifiers, or applications should be prepended to the variable
+// - Names must be lowercase and dash-separated (kebab-case).
+// - Names should represent properties or applications as closely as possible
+// - Modifiers, qualifiers, or applications should be prepended to the variable
 //   name. e.g. $form-family (bad) vs. $form-font-family (better)
-//
-// * Variables without a qualifier are considered “base” variables,
+// - Variables without a qualifier are considered “base” variables,
 //   i.e. the default value for that type, e.g. $font-size, $brand-color,
 //   $grey-50.
-//
-// * Variables with qualifiers at the beginning are considered “variations” on a
+// - Variables with qualifiers at the beginning are considered “variations” on a
 //   base variable, e.g. $small-font-size, $light-brand-color.
-//
-// * Some variables use a predefined, loose scale: $grey-10, -20, -30, etc.
+// - Some variables use a predefined, loose scale: $grey-10, -20, -30, etc.
 //   These should be defined in multiples of 10, with actual values
 //   only approximate. This provides room to adjust values without changing
 //   variable names, but allows users to more precisely gauge the variable by
@@ -25,22 +20,23 @@
 //   prefix such as $light-grey-10.
 
 
-// Typography
-// ---
+// TYPOGRAPHY
+// ----------
 
-$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif: Georgia, Times, "Times New Roman", serif;
+$sans-serif: /*"Helvetica Neue", Helvetica,*/ Arial, sans-serif;
+$serif: AdobeGaramondProRegular, /*"EB Garamond", Georgia, Times, "Times New Roman",*/ serif;
+$serif-italic: AdobeGaramondProItalic, serif;
 
 $font-family: $sans-serif;
-$header-font-family: $font-family;
+$header-font-family: $serif;
 
 $font-size: 14px;
 $leading-ratio: 1.5;
 $line-height: $font-size * $leading-ratio;
 
 
-// Colors
-// ---
+// COLOURS
+// -------
 
 // Neutrals
 $grey-10: #ecf0f1;
@@ -48,14 +44,17 @@ $grey-20: #bdc3c7;
 $grey-30: #95a5a6;
 $grey-40: #7f8c8d;
 $grey-50: #343839;
+$white: white;
 
 // Brand Colors
-$brand-color: #3498db; // blue
+$brand-color: #666; // blue
 $light-brand-color: lighten($brand-color, 60);
-$dark-brand-color: darken($brand-color, 60);
+$dark-brand-color: #212121; // darken($brand-color, 60);
+$dark-grey: #212121;
+$light-grey: #666;
 
 // Accent Colors
-$accent-color: #16a085; // turquoise
+$accent-color: $dark-brand-color; // turquoise
 $light-accent-color: lighten($accent-color, 60);
 $dark-accent-color: darken($accent-color, 60);
 
@@ -70,7 +69,7 @@ $light-error-color: lighten($error-color, 60);
 $dark-error-color: darken($error-color, 60);
 
 // Font Colors
-$font-color: $grey-50;
+$font-color: $light-grey;
 
 // Text Link Colors
 $link-color: $accent-color;
@@ -82,9 +81,7 @@ $background-color: white;
 // Borders
 $border-color: $grey-20;
 
-
-// Gradient Colors
-// ---
+// ### Gradient Variables
 //
 // Variables containing all of the gradients used in the site
 // e.g. background-image: $light-grey-gradient;
@@ -101,22 +98,21 @@ $brand-gradient: linear-gradient($light-brand-color, $brand-color);
 // Accent Gradient
 $accent-gradient: linear-gradient($light-accent-color, $accent-color);
 
-
-// Appearance
-// ---
+// APPEARANCE
+// ----------
 
 $border-radius: 4px;
 
 
-// Layout
-// ---
+// LAYOUT
+// ------
 
 $h-space: $line-height;
-$v-space: round($line-height * 0.5);
+$v-space: $line-height * 0.5;
 
 
-// Layers and `z-index`
-// ---
+// Z-INDEX
+// -------
 //
 // Organizes z-index usage by providing a set of named layers. Values can be
 // incremented/decremented slightly as necessary. eg. $stage-layer + 1;
@@ -136,8 +132,8 @@ $orchestra-layer: 100;  // 3
 $frontrow-layer:  1000; // 4
 
 
-// Shorthand Variables
-// ---
+// SHORTHAND VARIABLES
+// -------------------
 //
 // This is a place to collect quick ways to write certain properties that you
 // re-use often

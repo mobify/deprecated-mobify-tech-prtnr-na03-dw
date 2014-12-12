@@ -8,8 +8,6 @@
         {+style}
             <link rel="stylesheet" type="text/css" href="{@getUrl path="css/stylesheet.css" /}" />
         {/style}
-        <link rel="stylesheet" href="//cdn.mobify.com/modules/pikabu/0.2.1/pikabu.css">
-        <link rel="stylesheet" href="//cdn.mobify.com/modules/pikabu/0.2.1/pikabu-theme.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -34,12 +32,6 @@
 
             <!-- the main page content -->
             <div class="m-pikabu-container">
-                <header>
-                    <a class="m-pikabu-nav-toggle" data-role="left">
-                        Left Menu
-                    </a>
-                    <h1>Pikabu</h1>
-                </header>
 
                 {>"templates/partials/_header"/}
 
