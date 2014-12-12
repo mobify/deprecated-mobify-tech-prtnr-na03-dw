@@ -9,3 +9,4 @@ tmp/
 reports
 build.tar
 .bundle
+Gemfile.lock
