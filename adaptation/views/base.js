@@ -5,10 +5,11 @@ define([
     'adaptivejs/defaults',
     'includes/_header',
     'includes/_footer',
+    'includes/_sidebar',
     'dust!templates/base',
     'settings'
 ],
-function($, ResizeImages, Utils, Defaults, header, footer, template, Settings) {
+function($, ResizeImages, Utils, Defaults, header, footer, sidebar, template, Settings) {
 
     /**
      * Grab the default cache breaker variable from the Mobify Config
@@ -38,7 +39,8 @@ function($, ResizeImages, Utils, Defaults, header, footer, template, Settings) {
         template: template,
         includes: {
             header: header,
-            footer: footer
+            footer: footer,
+            sidebar: sidebar
         },
         /**
         * preProcess receives a context as a paramater and should return

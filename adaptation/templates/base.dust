@@ -3,7 +3,6 @@
 {head|openTag|s}
     {config.adaptiveBuildScript}{! Re-inserts Adaptive.js into page. Do not modify or remove!}
     {+head}
-        {head|innerHTML|s}
 
         {+style}
             <link rel="stylesheet" type="text/css" href="{@getUrl path="css/stylesheet.css" /}" />
@@ -47,7 +46,6 @@
         </div>
     {/bodyBlock}
     {+scripts}
-        {desktopScripts}
 
         {! Site UI scripts !}
         {?config.isDebug}

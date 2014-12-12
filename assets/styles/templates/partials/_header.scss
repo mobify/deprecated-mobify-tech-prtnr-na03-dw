@@ -1,1 +1,19 @@
+header.main {
+    overflow: hidden;
+    text-align: center;
+    height: 50px;
+    position: relative;
+}
 
+header h1 {
+    display: inline-block;
+    margin: 0;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#logo img {
+    padding: 6px 6px 6px 50px;
+}

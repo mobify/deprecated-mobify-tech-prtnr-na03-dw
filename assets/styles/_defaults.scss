@@ -1,26 +1,11 @@
 // ==========================================================================
-// LAYOUT
-// ==========================================================================
-
-$margin: 5px;
-$text: 14px;
-$xsmall-text: 11px;
-$small-text: 12px;
-$medium-text: 16px;
-$large-text: 18px;
-$xlarge-text: 24px;
-
-// ==========================================================================
 // COLORS
 // ==========================================================================
 
-$gray: #6b645c;
-$light: #e6e6dd;
-$brand: #e64a33;
-$accent: #fee65e;
-$dark-accent: #ffaa42;
-$light-accent: #fdef6e;
-$background: #fcfdf4;
+$brand: #93D94A;
+$grey: #606264;
+$blue: #07A5E4;
+$background: #333333;
 
 // ==========================================================================
 // GENERAL
@@ -30,18 +15,9 @@ body {
     margin: 0;
     padding: 0;
     background: white;
+    min-height: 480px;
 }
 
-header {
-    overflow: hidden;
-    text-align: center;
-}
-
-header h1 {
-    display: inline-block;
-    margin: 0;
-    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 50px;
+li {
+    padding: 10px;
 }

@@ -1,3 +1,7 @@
-<ul>
-    <li>item</li>
-</ul>
+{#sidebar}
+    <ul>
+        {#navigation}
+            <li>{.}</li>
+        {/navigation}
+    </ul>
+{/sidebar}

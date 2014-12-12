@@ -1,15 +1,8 @@
 {#header}
-    <header>
+    <header class="main">
         <a class="m-pikabu-nav-toggle" data-role="left">
-            Left Menu
+            <img src="{@getUrl path="images/menu-icon.png" /}" />
         </a>
-        <h1>Pikabu</h1>
-    </header>
-    <header class="t-header">
-        <h1>Welcome to your Adaptive.js site</h1>
-        <p>As an initial example of content selection, we've selected the title of your site and placed it in _header.dust:</p>
-        <p class="c-card">
-            {title}
-        </p>
+        <div id="logo">{logo}</div>
     </header>
 {/header}
