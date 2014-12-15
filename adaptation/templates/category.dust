@@ -1,0 +1,17 @@
+{>"templates/base"/}
+
+{<contentBlock}
+    {categories}
+{/contentBlock}
+
+{<uiScripts}
+    <script>
+    // Note: Add any JavaScript that should be run on this page into
+    // assets/js/ui/view-scripts/category.js
+    (function(require) {
+        require(["view-scripts/category"], function(categoryUI) {
+            categoryUI();
+        });
+    })(Adaptive.AMD.require);
+    </script>
+{/uiScripts}

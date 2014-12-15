@@ -1,0 +1,25 @@
+#search-result-items {
+    text-align: center;
+
+    li.grid-tile {
+        margin: 10px;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.23);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.23);
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.23);
+    }
+
+    .product-pricing {
+        padding: 5px;
+        span {
+            font-size: 1.6em;
+            color: $blue;
+        }
+    }
+    ul.swatch-list {
+        display: block;
+        li {
+            display: inline-block;
+            margin: 10px;
+        }
+    }
+}

@@ -20,8 +20,6 @@ function($, fastclick, Ppikabu, Scooch) {
                 right: '80%'
             }
         });
-
-        $('.m-scooch').scooch();
     };
 
     return globalUI;

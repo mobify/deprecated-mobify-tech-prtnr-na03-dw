@@ -2,14 +2,18 @@
 require(
     [
         'view-scripts/global',
-        'view-scripts/home'
+        'view-scripts/home',
+        'view-scripts/category',
+        'view-scripts/productlist'
 
         // Add additional UI scripts here
     ],
     function(
         globalUI,
 
-        home
+        home,
+        category,
+        productlist
     ) {
         globalUI();
     },

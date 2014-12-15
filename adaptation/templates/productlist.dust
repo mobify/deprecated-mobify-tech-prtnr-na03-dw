@@ -1,0 +1,17 @@
+{>"templates/base"/}
+
+{<contentBlock}
+    {products}
+{/contentBlock}
+
+{<uiScripts}
+    <script>
+    // Note: Add any JavaScript that should be run on this page into
+    // assets/js/ui/view-scripts/productlist.js
+    (function(require) {
+        require(["view-scripts/productlist"], function(productlistUI) {
+            productlistUI();
+        });
+    })(Adaptive.AMD.require);
+    </script>
+{/uiScripts}

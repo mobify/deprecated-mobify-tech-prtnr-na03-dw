@@ -1,16 +1,16 @@
 define([
     '$',
     'views/base',
-    'dust!templates/home'
+    'dust!templates/category'
 ],
 function($, BaseView, template) {
     return {
         template: template,
         extend: BaseView,
         context: {
-            templateName: 'home',
-            carousel: function() {
-                return $('#homepage-slides img');
+            templateName: 'category',
+            categories: function() {
+                return $('div.category-refinement ul');
             }
         }
     };

@@ -3,6 +3,6 @@
         <a class="m-pikabu-nav-toggle" data-role="left">
             <img src="{@getUrl path="images/menu-icon.png" /}" />
         </a>
-        <div id="logo">{logo}</div>
+        <div id="logo"><a href="/s/SiteGenesis/home">{logo}</a></div>
     </header>
 {/header}
