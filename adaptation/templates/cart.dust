@@ -1,0 +1,17 @@
+{>"templates/base"/}
+
+{<contentBlock}
+    {primary}
+{/contentBlock}
+
+{<uiScripts}
+    <script>
+    // Note: Add any JavaScript that should be run on this page into
+    // assets/js/ui/view-scripts/cart.js
+    (function(require) {
+        require(["view-scripts/cart"], function(cartUI) {
+            cartUI();
+        });
+    })(Adaptive.AMD.require);
+    </script>
+{/uiScripts}

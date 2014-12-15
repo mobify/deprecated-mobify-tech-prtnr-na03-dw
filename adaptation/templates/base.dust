@@ -47,6 +47,7 @@
             </div>
         </div>
     {/bodyBlock}
+    {desktopScripts}
     {+scripts}
 
         {! Site UI scripts !}

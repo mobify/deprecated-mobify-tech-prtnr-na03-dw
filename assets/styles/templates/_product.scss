@@ -7,12 +7,19 @@ h1.product-name {
     margin: 10px;
 }
 
-#pdpMain {
-    .size-chart-link {
-        display: none;
-    }
+#prReviewEngineDiv {
+    display: none;
+}
 
-    .product-number {
+#pdpMain {
+    .size-chart-link,
+    .product-number,
+    div.product-image-container,
+    #product-content div.product-review-links,
+    div.recommendations.cross-sell,
+    div.product-tabs,
+    h1.product-name,
+    div.product-actions {
         display: none;
     }
 

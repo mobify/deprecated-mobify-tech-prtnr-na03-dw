@@ -3,5 +3,6 @@
         {#navigation}
             <li>{.}</li>
         {/navigation}
+            <li><a href="/s/SiteGenesis/cart">Cart</a></li>
     </ul>
 {/sidebar}

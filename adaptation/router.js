@@ -4,9 +4,10 @@ define([
     'views/home',
     'views/category',
     'views/productlist',
-    'views/product'
+    'views/product',
+    'views/cart'
 ],
-function($, Router, Home, Category, ProductList, Product) {
+function($, Router, Home, Category, ProductList, Product, Cart) {
     var router = new Router();
 
     router
@@ -14,6 +15,7 @@ function($, Router, Home, Category, ProductList, Product) {
         .add(Router.selectorMatch('div.category-main-banner'), Category)
         .add(Router.selectorMatch('#search-result-items'), ProductList)
         .add(Router.selectorMatch('#pdpMain'), Product)
+        .add(Router.selectorMatch('#wrapper.pt_cart'), Cart)
 
     return router;
 });

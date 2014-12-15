@@ -5,7 +5,8 @@ require(
         'view-scripts/home',
         'view-scripts/category',
         'view-scripts/productlist',
-        'view-scripts/product'
+        'view-scripts/product',
+        'view-scripts/cart'
 
         // Add additional UI scripts here
     ],
@@ -15,7 +16,8 @@ require(
         home,
         category,
         productlist,
-        product
+        product,
+        cart
     ) {
         globalUI();
     },

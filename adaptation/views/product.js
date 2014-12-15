@@ -25,16 +25,7 @@ function($, BaseView, template) {
                 return collection;
             },
             products: function() {
-                var $products = $('#pdpMain');
-
-                $products.find('div.product-image-container').remove();
-                $products.find('#product-content div.product-review-links').remove();
-                $products.find('div.recommendations.cross-sell').remove();
-                $products.find('div.product-tabs').remove();
-                $products.find('h1.product-name').remove();
-                $products.find('div.product-actions').remove();
-
-                return $products;
+                return $('#pdpMain');
             },
             minicart: function() {
                 return $('#mini-cart');
