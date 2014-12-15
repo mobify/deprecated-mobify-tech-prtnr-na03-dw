@@ -26,10 +26,21 @@ h1.product-name {
         }
     }
 
+    .pdpForm {
+        padding: 10px;
+    }
+
+    div.availability {
+        padding: 10px;
+        span {
+            display: inline-block;
+            padding-right: 5px;
+        }
+    }
+
     ul.swatches.size {
         display: block;
         li {
-            padding: 5px;
             margin: 3px;
             margin-bottom: 6px;
             display: inline-block;
@@ -49,24 +60,26 @@ h1.product-name {
 
     ul.swatches.Color {
         display: block;
-        height: 28px;
-        margin: 0px;
-        padding: 0px;
         li {
-            border-radius: 3px;
+            margin: 3px;
+            margin-bottom: 0;
             display: inline-block;
-            padding: 3px;
+            border: 1px solid $blue;
+            border-radius: 3px;
             a {
                 border: 1px solid #E0E0E0;
-                height: 22px;
+                border-radius: 1px;
                 margin: 0;
                 padding: 0;
                 text-indent: -999em;
-                width: 32px;
                 display: block;
             }
             &.selected a {
                 border-color: #FFFFFF;
+            }
+            &.selected-value {
+                border: none;
+                font-style: italic;
             }
         }
         li.selected {
