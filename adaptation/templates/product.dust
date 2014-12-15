@@ -1,0 +1,31 @@
+{>"templates/base"/}
+
+{<contentBlock}
+    <div style="display: none;">{minicart}</div>
+    {name}
+    <!-- the viewport -->
+    <div class="m-scooch m-fluid m-scooch-photos">
+      <!-- the slider -->
+      <div class="m-scooch-inner">
+        <!-- the items -->
+        {#images}
+        <div class="m-item">
+            <img src="{.}" />
+        </div>
+        {/images}
+      </div>
+    </div>
+    {products}
+{/contentBlock}
+
+{<uiScripts}
+    <script>
+    // Note: Add any JavaScript that should be run on this page into
+    // assets/js/ui/view-scripts/product.js
+    (function(require) {
+        require(["view-scripts/product"], function(productUI) {
+            productUI();
+        });
+    })(Adaptive.AMD.require);
+    </script>
+{/uiScripts}
