@@ -47,8 +47,8 @@
             </div>
         </div>
     {/bodyBlock}
-    {desktopScripts}
     {+scripts}
+        {desktopScripts}
 
         {! Site UI scripts !}
         {?config.isDebug}
