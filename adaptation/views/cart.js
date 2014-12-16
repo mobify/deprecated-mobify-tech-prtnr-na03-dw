@@ -12,11 +12,13 @@ function($, BaseView, template) {
             primary: function() {
                 var $primary = $('#primary');
 
-                $primary.find('div.cart-footer').remove();
+                $primary.children('div.cart-footer').remove();
 
-                var $img = $primary.find('.item-image img');
-                var imagesrc = $img.attr('x-src').replace('/small/', '/large/');
-                $img.attr('x-src', imagesrc);
+                var $img = $primary.find('.item-image img').each(function() {
+                    var $this = $(this);
+                    var imagesrc = $this.attr('x-src').replace('/small/', '/large/');
+                    $this.attr('x-src', imagesrc);
+                });
 
                 $primary.find('.item-price').prepend('<span class="sales">Sale Price</span>');
                 $primary.find('.item-total').prepend('<span class="total">Total</span>');

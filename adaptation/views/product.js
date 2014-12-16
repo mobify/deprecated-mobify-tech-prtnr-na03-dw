@@ -13,11 +13,9 @@ function($, BaseView, template) {
                 return $('h1.product-name');
             },
             images: function() {
-                $images = $('.product-image-container');
-
                 var collection = [];
 
-                var $thumbs = $images.find('img.productthumbnail').each(function() {
+                $('div.product-image-container img').each(function() {
                     var $this = $(this).attr('x-src').replace(/\/small\//, '/large/');
                     collection.push($this);
                 });

@@ -1,13 +1,14 @@
 #primary {
     padding: 10px;
-    h1 {
+    h1,
+    div.item-user-actions a,
+    .price-standard,
+    .item-edit-details,
+    thead {
         display: none;
     }
     table {
         text-align: center;
-    }
-    div.item-user-actions a {
-        display: none;
     }
     tr {
         margin: 10px;
@@ -27,11 +28,9 @@
         .price-total {
             color: $brand;
         }
-        .item-edit-details {
-            display: none;
-        }
     }
-    thead {
-        display: none;
-    }
+}
+
+#dwfrm_cart_couponCode {
+    margin-bottom: 10px;
 }
